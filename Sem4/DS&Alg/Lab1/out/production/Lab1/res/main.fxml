@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="source.controllers.Controller">
+   <children>
+      <Canvas fx:id="canvas" height="440.0" layoutX="10.0" layoutY="32.0" width="1004.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="32.0" />
+      <Button cancelButton="true" layoutX="970.0" layoutY="675.0" mnemonicParsing="false" onAction="#close" prefHeight="31.0" prefWidth="70.0" text="Выход" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="textArea" layoutX="10.0" layoutY="482.0" prefHeight="219.0" prefWidth="513.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="501.0" />
+      <Button layoutX="546.0" layoutY="583.0" mnemonicParsing="false" onAction="#traverse" text="Обход графа" AnchorPane.bottomAnchor="106.0" AnchorPane.rightAnchor="369.0" />
+      <Button layoutX="779.0" layoutY="620.0" mnemonicParsing="false" onAction="#generate" text="Сгенерировать" AnchorPane.bottomAnchor="69.0" AnchorPane.rightAnchor="121.0" />
+      <Separator layoutX="670.0" layoutY="481.0" orientation="VERTICAL" prefHeight="219.0" prefWidth="6.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="348.0" />
+      <TextField fx:id="countOfVertex" layoutX="887.0" layoutY="524.0" prefHeight="31.0" prefWidth="75.0" AnchorPane.bottomAnchor="165.0" AnchorPane.rightAnchor="62.0" />
+      <Label layoutX="721.0" layoutY="529.0" text="Количество вершин:" AnchorPane.bottomAnchor="170.0" AnchorPane.rightAnchor="161.0" />
+      <Label layoutX="683.0" layoutY="572.0" text="Коэффициент заполнения" AnchorPane.bottomAnchor="127.0" AnchorPane.rightAnchor="161.0" />
+      <TextField fx:id="ratio" layoutX="887.0" layoutY="567.0" prefHeight="31.0" prefWidth="75.0" AnchorPane.bottomAnchor="122.0" AnchorPane.rightAnchor="62.0" />
+      <Label layoutX="740.0" layoutY="488.0" text="Генерация случайного графа" AnchorPane.bottomAnchor="211.0" AnchorPane.rightAnchor="83.0" />
+      <Label layoutX="530.0" layoutY="514.0" text="Начальная вершина" AnchorPane.bottomAnchor="185.0" AnchorPane.rightAnchor="354.0" />
+      <Spinner fx:id="startVertex" editable="true" layoutX="573.0" layoutY="540.0" prefHeight="31.0" prefWidth="70.0" AnchorPane.bottomAnchor="149.0" AnchorPane.rightAnchor="381.0" />
+   </children>
+</AnchorPane>
