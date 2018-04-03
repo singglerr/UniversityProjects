@@ -2,8 +2,6 @@ package source.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.geometry.Point2D;
-import javafx.geometry.Point3D;
 import javafx.scene.Node;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.control.Slider;
@@ -37,12 +35,12 @@ public class Controller {
     @FXML
     public Slider sliderGamma;
 
-    private Model3D model;
+    private Model model;
 
 
     @FXML
     public void initialize() {
-        model = new Model3D(canvasAxon, canvasComplex);
+        model = new Model(canvasAxon, canvasComplex);
         sliderX.setValue(64);
         sliderY.setValue(64);
         sliderZ.setValue(64);

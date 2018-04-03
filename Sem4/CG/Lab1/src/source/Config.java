@@ -3,7 +3,7 @@ package source;
 import javafx.scene.paint.Color;
 
 public class Config {
-    public static final double RADIUS = 8;
+    public static final double RADIUS = 5;
     public static final Color STROKECOLOR = Color.BLACK;
     public static final Color T = Color.BLUE;
     public static final Color TX = Color.YELLOW;
